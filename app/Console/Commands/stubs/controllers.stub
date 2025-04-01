@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Modules\{{moduleName}}\Controllers;
+
+use App\Http\Controllers\BaseController;
+use App\Services\{{moduleName}}Service;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class {{moduleName}}Controller extends BaseController
+{
+    private $service;
+    public function __construct(
+        {{moduleName}}Service $service,
+    ){
+        $this->service = $service;
+    }
+
+    public function index(Request $request){
+    }
+}
